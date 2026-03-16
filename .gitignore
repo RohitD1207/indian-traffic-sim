@@ -1,0 +1,14 @@
+# virtual environment
+capstone/
+
+# python
+__pycache__/
+*.pyc
+
+# simulation outputs
+outputs/
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
