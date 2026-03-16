@@ -2,9 +2,12 @@ import os
 import sys
 import traci
 import csv
+from pathlib import Path
 
 sumo_config = "mirage/config.sumocfg"
 sumo_binary = "sumo-gui"
+
+Path("outputs").mkdir(exist_ok=True)
 
 traci.start([sumo_binary, "-c", sumo_config])
 
